@@ -6,14 +6,18 @@ public class DataKaryawan extends javax.swing.JFrame {
 
     DefaultTableModel model;
 
+    private String NamaLengkap1;
+    private String TempatLahir;
+    private String Pendidikan;
+    private String StatusKarayawan;
+    private int Tanggal, Bulan, Tahun;
+
     public DataKaryawan() {
         initComponents();
 
         model = (DefaultTableModel) jTable1.getModel();
 
         jTable1.setModel(model);
-
-        
     }
 
     @SuppressWarnings("unchecked")
